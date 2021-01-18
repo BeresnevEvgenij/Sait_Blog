@@ -1,0 +1,135 @@
+!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="master.css">
+    <title>Профиль</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header_left">
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li> <a href="index.html" class="nav_link">Главная</a> </li>
+                        <li class="nav_item"> <a href="#" class="nav_link has-sibnav">Статьи</a>
+                            <ul class="subnav">
+                                <li> <a href="" class="sunbar_link">Создание сайтов</a> </li>
+                                <li> <a href="" class="sunbar_link">Интернет-маркетинг</a> </li>
+                                <li> <a href="" class="sunbar_link">Продвижение видео</a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="#" class="nav_link">Обо мне</a> </li>
+                        <li> <a href="#" class="nav_link">Реклама</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_right">
+                <nav class="nav">
+                    <ul>
+                        <li class="nav_item"> <a href="profile.html" class="nav_link">Профиль</a></li>
+                    </ul>
+                </nav>
+                <form class="search" action="search.html" method="get">
+                    <input class="search_input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
+<!--sidebar-->
+        <aside class="sidebar">
+            <div class="sidebar_header"> <img class="img_h" src="img/sidebar-header.jpg" alt=""> </div>
+            <div class="sidebar_content">
+                <div class="profile"> <img class="profile_avatar" src="img/d3ddfdd406b6460aa4e3d2e92904b615.jpg" alt="">
+                    <div class="profile_name">Евгений Береснев</div>
+                    <div class="profile_prof">Блог front-end разработчика</div>
+                    <ul class="social">
+                        <li cherf="social_item">
+                            <a class="social_link" href="https://vk.com/id551406959" target="_blank"> <img class="img_vk" src="img/vk.svg" alt=""> </a>
+                        </li>
+                        <li cherf="social_item">
+                            <a class="social_link" href="RED-KROK@yandex.ru" target="_blank"> <img class="img_mail" src="img/envelope-regular.svg" alt="#"> </a>
+                        </li>
+                        <li cherf="social_item">
+                            <a class="social_link" href="https://arkhangelsk.hh.ru/resume/e4dad25dff084b9c040039ed1f4f7053396a6e" target="_blank"> <img class="img_mail" src="img/15606886482290.png" alt="#"> </a>
+                        </li>
+                    </ul>
+                    <div class="profile_text">Font-end разработчик c не большим опытом. Созданием сайтов занимаюсь с 2020 г. Основные навыки: HTML, CSS, JS. </div>
+                </div>
+            </div>      
+            <div class="sidebar_footer"> <a class="btn btn--red" href="works.html">мои работы</a>
+                <button class="btn btn--blue" type="button">написать мне</button>
+            </div>
+        </aside>
+<!--main-->
+        <aside class="sidebar">
+            <div class="sidebar_header"> <img class="img_h" src="img/sidebar-header.jpg" alt=""> </div>
+            <div class="sidebar_content">
+                <div class="profile"> <img class="profile_avatar" src="img/d3ddfdd406b6460aa4e3d2e92904b615.jpg" alt="">
+                    <div class="profile_name">Евгений Береснев</div>
+                    <div class="profile_prof">Блог front-end разработчика</div>
+                   <ul class="social">
+                        <li cherf="social_item">
+                            <a class="social_link" href="https://vk.com/id551406959" target="_blank"> <img class="img_vk" src="img/vk.svg" alt=""> </a>
+                        </li>
+                        <li cherf="social_item">
+                            <a class="social_link" href="RED-KROK@yandex.ru" target="_blank"> <img class="img_mail" src="img/envelope-regular.svg" alt="#"> </a>
+                        </li>
+                        <li cherf="social_item">
+                            <a class="social_link" href="https://arkhangelsk.hh.ru/resume/e4dad25dff084b9c040039ed1f4f7053396a6e" target="_blank"> <img class="img_mail" src="img/15606886482290.png" alt="#"> </a>
+                        </li>
+                    </ul>
+                    <div class="profile_text">Font-end разработчик c не большим опытом. Созданием сайтов занимаюсь с 2020 г. Основные навыки: HTML, CSS, JS. </div>
+                </div>
+            </div>
+            <div class="sidebar_footer"> <a class="btn btn--red" href="works.html">мои работы</a>
+                 <button class="btn btn--blue" type="button">написать мне</button>
+            </div>
+        </aside>
+<!--main-->
+         <main class="main">
+            <div class="main_conteiner">
+               <h1 class="page_title">Профиль</h1>
+             
+               <form action="/" class="form" method="post">
+               <div class="cabinet">
+                   <div class="cabinet_form">
+                       <div class="form_group">
+                      <input class="form_control" type="text" placeholder="Ваше имя" value="Евгений Береснев">
+                      <span class="form_line"></span> 
+                   </div>
+                     <div class="form_group">
+                      <input class="form_control" type="text" placeholder="Ваш e-mail" value="e-mail">
+                      <span class="form_line"></span> 
+                   </div>
+                     <div class="form_group">
+                      <input class="form_control" type="pasword" placeholder="Новый пароль" >
+                      <span class="form_line"></span> 
+                   </div>
+                     <div class="form_group">
+                      <input class="form_control" type="pasword" placeholder="Подтвердите пароль" >
+                      <span class="form_line"></span> 
+                   </div>
+                   </div>
+                   <div class="cabinet_avatar">
+                       <img  src="https://placehold.it/150" alt="">
+                       <label class="cabinet_file">
+                           <input class="cabinet_input" type="file">
+                           Выбрать аватар
+                       </label>
+                   </div>
+               </div>
+                   
+               
+              
+               
+                 <button class="btn-work-blue-prof" type="button">Сохранить</button>
+                 </form>
+            </div>    
+        </main>
+        <!-- JS -->
+        <script src="master.js"></script>
+</body>
+
+</html>
