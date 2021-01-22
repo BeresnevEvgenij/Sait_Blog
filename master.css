@@ -19,6 +19,7 @@ body {
     font-size: 1.4rem;
     font-family: -apple-system, BlinkMacSystemFont, Segoe\ UI, Roboto, Helvetica\ Neue, Arial, Noto\ Sans, sans-serif;
     max-width: 1800px;
+    z-index: 1000;
 }
 
 .page {
@@ -123,16 +124,14 @@ placholder {
 }
 
 .main_conteiner {
-    
     width: calc(100% - 100px);
     color: white;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 5rem;
     padding-right: 5rem;
     margin: 0 auto;
-    
-    margin: 0 auto;
+   
 }
 
 .sidebar_header {
@@ -271,15 +270,18 @@ li {
 
 .stories {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 13px;
     grid-template-rows: 195px;
+    margin: auto;
     margin-bottom: 3rem;
-    justify-content: space-around;
-    padding: 5px;
+   
+    
 }
 
+
 .stories_item {
+    position: relative;
     background-color: #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -297,7 +299,7 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-width: 145px;
+    max-width: 200px;
 }
 
 .stories_tatle {
@@ -776,6 +778,7 @@ p {
     padding: 1rem;
     border-radius: 3px;
     border: none;
+    margin-bottom: 2rem;
 }
 
 .cabinet_file {
@@ -830,8 +833,66 @@ p {
 
 /*--------------------------------------*/
 
+.modal{
+/*display: flex;*/
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1010;
+    background: rgba(000, 0, 0, 0.8);
+    
+   
+}
+.modal_content{
+    position: relative;
+    
+    padding: 8rem 8rem 2.5rem;
+    background-color: #202020; 
+    border-radius: 5px;
+    
+}
+.modal_content-contact{
+    position: relative;
+    padding:4rem 8rem;
+    background-color: #202020; 
+    border-radius: 5px;
+   
+     
+}
 
-
+.modal_close{
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: transform .2s linear;
+}
+.modal_close:hover{
+    transform:rotate(90deg);
+}
+.modal_footer{
+    display: flex;
+    justify-content: center;
+    color: #B2B2B2;
+    font-size: 1.2rem;
+}
+.modal_footer_li{
+    margin: 0 .5rem;
+}
+.modal_video{
+    
+}
 /*--------------------------------------*/
 
 
