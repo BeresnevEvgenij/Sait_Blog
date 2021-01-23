@@ -44,6 +44,13 @@ body {
     z-index: 1000;
     box-shadow: 5px 0 15px black;
 }
+@media screen and (max-width: 991px){
+    .sidebar{
+       display: none;
+    }
+}
+
+/*--------------------------------------*/
 
 .header {
     width: calc(100% - 300px);
@@ -57,6 +64,14 @@ body {
     box-shadow: 0 5px 22px black;
     display: flex;
 }
+
+@media screen and (max-width: 991px){
+    .header{
+       width: 100%;
+    }
+}
+
+
 
 .header_left {
     width: 60%;
@@ -90,6 +105,17 @@ placholder {
     color: #000;
 }
 
+@media screen and (max-width: 760px){
+    .nav{
+       display: none;
+    }
+}
+@media screen and (max-width: 760px){
+    .nav_item{
+       display: none;
+    }
+}
+
 .nav_list {
     display: flex;
 }
@@ -115,12 +141,19 @@ placholder {
 
 .nav_link:hover {
     background-color: #3137C9;
+    
 }
 
 .main {
     padding-top: 10rem;
     padding-left: 300px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 991px){
+    .main{
+       padding-left: 0;
+    }
 }
 
 .main_conteiner {
@@ -131,7 +164,7 @@ placholder {
     padding: 5rem;
     padding-right: 5rem;
     margin: 0 auto;
-   
+    
 }
 
 .sidebar_header {
@@ -238,11 +271,12 @@ li {
     list-style-type: none;
 }
 
+/*--------------------------------------*/
 .subnav {
     display: none;
     background-color: #3137C9;
     border-radius: 0 0 5px 5px;
-    padding: 4px;
+    padding-bottom: 2px;
 }
 
 .nav_item:hover .subnav {
@@ -255,14 +289,17 @@ li {
 }
 
 .sunbar_link {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
     text-decoration: none;
     margin: 5px;
+    width: 110px;
+
 }
 
 .sunbar_link:hover {
     text-decoration: underline;
+    
 }
 
 
@@ -276,20 +313,32 @@ li {
     margin: auto;
     margin-bottom: 3rem;
    
-    
+         
+ ;
 }
 
 
 .stories_item {
     position: relative;
-    background-color: #ccc;
+    
     border-radius: 5px;
     overflow: hidden;
     position: relative;
     max-width: 145px;
     box-shadow: 0 15px 25px black;
+     z-index: 1;
+    
 }
-
+.stories_item::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     background: linear-gradient(to bottom, rgba(000, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%);
+    z-index: 3;
+    
+}
 .stories_foto {
     position: absolute;
     top: 0;
@@ -299,7 +348,7 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-width: 200px;
+    z-index: 2;
 }
 
 .stories_tatle {
@@ -307,12 +356,13 @@ li {
     padding: 1.4rem;
     font-size: 14px;
     line-height: 1.2rem;
-    color: white;
+    
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 3;
-    background: #3137C9;
+    z-index: 4;
+    
+    
 }
 
 
@@ -343,7 +393,7 @@ li {
 
 .add-post-send {
     display: flex;
-    weight: 500;
+    
     height: 1.1rem;
     background: blue;
     border-radius: 50%;
@@ -369,6 +419,19 @@ li {
     background-color: #3137C9;
 }
 
+.embed{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    content: "";
+    display: block;
+    
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
 
 /*--------------------------------------*/
 
@@ -459,7 +522,7 @@ time:hover {
     display: block;
     text-align: center;
     z-index: 1;
-    width: 100%;
+   
     overflow: hidden;
     justify-content: center;
 }
@@ -764,6 +827,7 @@ p {
 
 .cabinet_form {
     width: 34rem;
+    
 }
 
 .btn-work-blue-prof {
@@ -805,6 +869,12 @@ p {
 
 .cabinet_input {
     display: none;
+}
+
+@media screen and (max-width: 991px){
+    .cabinet_form{
+       width: ;   
+    }
 }
 
 
