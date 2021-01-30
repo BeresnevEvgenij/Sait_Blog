@@ -106,6 +106,7 @@ placholder {
 .main {
     padding-top: 8rem;
     padding-left: 300px;
+    
 }
 
 .main_conteiner {
@@ -114,6 +115,7 @@ placholder {
     max-width: 800px;
     margin: 0 auto;
     justify-content: center;
+     min-width: 300px
 }
 
 .sidebar_header {
@@ -315,6 +317,7 @@ li {
     border-color: #121212;
     box-shadow: 0 15px 25px black;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
 .add-post__textarea {
@@ -342,31 +345,31 @@ li {
 }
 
 .b-1 {
+    height: 40px;
     width: 40px;
     margin-left: 10px;
     border-radius: 50%;
     border: none;
     align-items: center;
-    justify-content: center;
+    flex-shrink: 0;
 }
 
 .b-2 {
+    
+    height: 40px;
     width: 40px;
     margin-left: 10px;
     border-radius: 50%;
     border: none;
     background-color: #3137C9;
+    flex-shrink: 0;
 }
 
 .embed {
+    min-height: 200px;
     width: 100%;
-    height: 100%;
     position: relative;
     overflow: hidden;
-    content: "";
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 
@@ -379,6 +382,8 @@ li {
     padding: 2.5rem;
     border-radius: 5px;
     overflow: hidden;
+    
+    
 }
 
 .post_heder {
@@ -408,7 +413,6 @@ img {
 a {
     color: white;
     text-decoration: none;
-    
 }
 
 .post-title {
@@ -426,10 +430,8 @@ a {
 .post_footer {
     justify-content: space-between;
     display: flex;
-}
-
-.post_data-item {
-    padding: 6px;
+    line-height: 1.2rem;
+    border-bottom: 1px solid #1c1c1c;
 }
 
 time:hover {
@@ -442,25 +444,7 @@ time:hover {
     color: white;
     right: 10px;
     color: #3137C9;
-}
-
-
-/*--------------------------------------*/
-
-.post_heder_post_heder--video {
-    margin: 0 0 2.5rem;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    align-content: center;
-    align-items: center;
-    display: block;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    z-index: 1;
-    overflow: hidden;
-    justify-content: center;
+   
 }
 
 
@@ -633,7 +617,6 @@ p {
 }
 
 .coment_avatar {
-    
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -911,14 +894,14 @@ p {
 
 
 /*--------------------------------------*/
+
 .mob-nav {
     display: none;
-    
     flex-direction: column;
 }
 
-/*--------------------------------------*/
 
+/*--------------------------------------*/
 
 @media screen and (max-width: 991px) {
     .sidebar {
@@ -927,26 +910,27 @@ p {
         transition: transform .5s linear;
     }
 }
+
 @media screen and (max-width: 750px) {
     .sidebar {
         transform: translateX(0%);
         transition: transform .5s linear;
         overflow: auto;
+        
     }
 }
 
 @media screen and (max-width: 750px) {
-    .mob-nav{
+    .mob-nav {
         display: block;
     }
 }
+
 @media screen and (max-width: 991px) {
-    .burger{
+    .burger {
         display: block;
     }
 }
-
-
 
 @media screen and (max-width: 991px) {
     .header {
@@ -986,11 +970,17 @@ p {
 
 @media screen and (max-width: 991px) {
     .main {
-        padding-left: 0;
+        padding-left: 0px;
+    
     }
 }
-
-
+@media screen and (max-width: 991px) {
+    .main_conteiner {
+        padding: 1px;
+        
+        
+    }
+}
 
 @media screen and (max-width: 750px) {
     .sidebar_header {
@@ -1037,12 +1027,63 @@ p {
         margin-top: -30px;
     }
 }
+@media screen and (max-width: 750px) {
+    .post_read {
+       
+    }
+}
+@media screen and (max-width: 750px) {
+    .post_data-item {
+       
+    }
+}
 
 @media screen and (max-width: 750px) {
     .social {
-        display: none;
+      
+    }
+}
+@media screen and (max-width: 750px) {
+    .stories {
+        grid-template-columns: 150px 150px 150px 150px;
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 750px) {
+    .post{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .post_title{
+        padding: 10px;
     }
 }
 
 
 /*--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
