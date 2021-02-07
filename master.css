@@ -106,7 +106,7 @@ placholder {
 .main {
     padding-top: 8rem;
     padding-left: 300px;
-    
+
 }
 
 .main_conteiner {
@@ -210,14 +210,17 @@ placholder {
 
 .btn--red {
     background-color: #ED3024;
-    box-shadow: 0 7px 17px -10px red;
-}
 
+}
+.btn--red:hover {
+        box-shadow: 0 7px 17px -10px red;
+}
 .btn--blue {
     background-color: #3137C9;
+}
+.btn--blue:hover {
     box-shadow: 0 7px 17px -10px blue;
 }
-
 li {
     list-style-type: none;
 }
@@ -355,7 +358,7 @@ li {
 }
 
 .b-2 {
-    
+
     height: 40px;
     width: 40px;
     margin-left: 10px;
@@ -382,8 +385,8 @@ li {
     padding: 2.5rem;
     border-radius: 5px;
     overflow: hidden;
-    
-    
+
+
 }
 
 .post_heder {
@@ -444,7 +447,7 @@ time:hover {
     color: white;
     right: 10px;
     color: #3137C9;
-   
+
 }
 
 
@@ -898,6 +901,7 @@ p {
 .mob-nav {
     display: none;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 
@@ -916,7 +920,7 @@ p {
         transform: translateX(0%);
         transition: transform .5s linear;
         overflow: auto;
-        
+
     }
 }
 
@@ -971,14 +975,14 @@ p {
 @media screen and (max-width: 991px) {
     .main {
         padding-left: 0px;
-    
+
     }
 }
 @media screen and (max-width: 991px) {
     .main_conteiner {
         padding: 1px;
-        
-        
+
+
     }
 }
 
@@ -1029,18 +1033,18 @@ p {
 }
 @media screen and (max-width: 750px) {
     .post_read {
-       
+
     }
 }
 @media screen and (max-width: 750px) {
     .post_data-item {
-       
+
     }
 }
 
 @media screen and (max-width: 750px) {
     .social {
-      
+
     }
 }
 @media screen and (max-width: 750px) {
@@ -1062,28 +1066,3 @@ p {
 
 
 /*--------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
