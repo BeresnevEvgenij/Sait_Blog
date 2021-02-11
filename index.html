@@ -41,8 +41,7 @@
                 <input class="search_input" type="text" placeholder="Поиск по блогу"> </form>
         </div>
     </header>
-    <!--sidebar-->
-
+<!--sidebar-->
     <aside class="sidebar">
         <div class="sidebar_header"> <img class="img_h" src="img/sidebar-header.jpg" alt=""> </div>
         <div class="sidebar_content">
@@ -54,7 +53,7 @@
                         <a class="social_link" href="https://vk.com/id551406959" target="_blank"> <img class="img_vk" src="img/vk.svg" alt=""> </a>
                     </li>
                     <li cherf="social_item">
-                        <a class="social_link" href="RED-KROK@yandex.ru" target="_blank"> <img class="img_mail" src="img/envelope-regular.svg" alt="#"> </a>
+                        <a class="social_link" href="https://mail.yandex.ru/?uid=858035131#inbox" target="_blank"> <img class="img_mail" src="img/envelope-regular.svg" alt="#"> </a>
                     </li>
                     <li cherf="social_item">
                         <a class="social_link" href="https://arkhangelsk.hh.ru/resume/e4dad25dff084b9c040039ed1f4f7053396a6e" target="_blank"> <img class="img_mail" src="img/15606886482290.png" alt="#"> </a>
@@ -72,14 +71,13 @@
             </div>
         </div>
         <div class="sidebar_footer"> <a class="btn btn--red" href="works.html">мои работы</a>
-            <button class="btn btn--blue" type="button">написать мне</button>
+          <button class="btn btn--blue" type="button" data-modal="contact-modal">написать мне</button>
         </div>
     </aside>
-
 <!--main-->
     <main class="main">
         <div class="main_conteiner">
-            <div class="stories">
+            <div class="stories" data-modal="story-modal">
                 <div class="stories_item"> <img class="stories_foto" src="img/stories-1.jpg" alt="">
                     <div class="stories_tatle">Закат.</div>
                 </div>
@@ -96,7 +94,7 @@
                     <div class="stories_tatle">Работа :D</div>
                 </div>
             </div>
-            <!--post-->
+<!--post-->
             <div class="add-post">
                 <form class="add-post__form" action="/" method="post">
                     <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
@@ -182,8 +180,8 @@
         </ul>
         </div>
     </main>
-    <!--modal-->
-    <div class="modal">
+<!--modal-->
+    <div class="modal" id="contact-modal" >
         <div class="modal_content">
             <botton class="modal_close" type="button"> <img src="img/close.svg" alt="Закрыть"> </botton>
             <form class="form" action="/" method="post">
@@ -207,7 +205,9 @@
     </div>
     <div class="modal">
         <div class="modal_content-contact">
-            <botton class="modal_close" type="button"> <img src="img/close.svg" alt="Закрыть"> </botton>
+            <botton class="modal_close" type="button">
+              <img src="img/close.svg" alt="Закрыть">
+            </botton>
             <ul class="social">
                 <li cherf="social_item">
                     <a class="social_link" href="https://vk.com/id551406959" target="_blank"> <img class="img_vk" src="img/vk.svg" alt=""> </a>
