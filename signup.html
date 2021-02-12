@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="sidebar_footer"> <a class="btn btn--red" href="works.html">мои работы</a>
-                <button class="btn btn--blue" type="button">написать мне</button>
+                <button class="btn btn--blue" type="button" data-modal="contact-modal">написать мне</button>
             </div>
         </aside>
         <!--main-->
@@ -111,6 +111,50 @@
                 </form>
             </div>
         </main>
+        <!--modal-->
+            <div class="modal" id="contact-modal" >
+                <div class="modal_content">
+                    <botton class="modal_close" type="button"> <img src="img/close.svg" alt="Закрыть"> </botton>
+                    <form class="form" action="/" method="post">
+                        <div class="cabinet_form">
+                            <div class="form_group">
+                                <input class="form_control" type="text" placeholder="Ваше имя"> <span class="form_line"></span> </div>
+                            <div class="form_group">
+                                <input class="form_control" type="text" placeholder="Ваш e-mail"> <span class="form_line"></span> </div>
+                            <div class="form_group">
+                                <textarea class="form_control" placeholder="Текст сообщения"></textarea> <span class="form_line"></span> </div>
+                            <div class="form_futer_signup">
+                                <button class="btn-work-blue-prof" type="button">Войти</button>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="modal_footer">
+                        <li class="modal_footer_li"> e-mail: <a href="mailto:RED-KROK@yandex.ru">RED-KROK@yandex.ru </a> </li>
+                        <li class="modal_footer_li"> Тел: <a href="tel: +80090099999">+800-900-999-99 </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal_content-contact">
+                    <botton class="modal_close" type="button">
+                      <img src="img/close.svg" alt="Закрыть">
+                    </botton>
+                    <ul class="social">
+                        <li cherf="social_item">
+                            <a class="social_link" href="https://vk.com/id551406959" target="_blank"> <img class="img_vk" src="img/vk.svg" alt=""> </a>
+                        </li>
+                        <li cherf="social_item">
+                            <a class="social_link" href="RED-KROK@yandex.ru" target="_blank"> <img class="img_mail" src="img/envelope-regular.svg" alt="#"> </a>
+                        </li>
+                        <li cherf="social_item">
+                            <a class="social_link" href="https://arkhangelsk.hh.ru/resume/e4dad25dff084b9c040039ed1f4f7053396a6e" target="_blank"> <img class="img_mail" src="img/15606886482290.png" alt="#"> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal">
+                <video class="modal_video" poster="https://placehold.it/420x580"></video>
+            </div>
     </div>
     <!-- JS -->
     <script src="master.js"></script>
