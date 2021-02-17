@@ -29,7 +29,7 @@ modalClose.forEach(item => {
 });
 modal.forEach(item => {
   item.addEventListener('click', event => {
-    let currentModal = event.target;
+    let currentModal = event.currentTarget;
 
     currentModal.classList.remove('show');
 
