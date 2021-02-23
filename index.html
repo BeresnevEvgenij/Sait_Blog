@@ -8,12 +8,12 @@
     <title>Сайт_Блог</title>
 </head>
 
-<body>
+<body class="show-sidebar">
     <header class="header">
         <div class="header_left">
             <nav class="nav">
                 <ul class="nav_list">
-                    <li> <a href="index.html" class="nav_link">Главная</a> </li>
+                    <li> <a href="index.html" class="nav_link">Главная</a></li>
                     <li class="nav_item"> <a href="#" class="nav_link has-sibnav">Статьи</a>
                         <ul class="subnav">
                             <li> <a href="" class="sunbar_link">Создание сайтов</a> </li>
@@ -24,7 +24,7 @@
                     <li> <a href="text.html" class="nav_link">Обо мне</a> </li>
                     <li> <a href="#" class="nav_link">Реклама</a> </li>
         </div>
-        <button class="burger" type="button">
+        <button class="burger" type="button" id="sidebarToggle">
            <span class="span_burger"></span>
            <span class="span_burger"></span>
            <span class="span_burger"></span>
@@ -42,7 +42,7 @@
         </div>
     </header>
 <!--sidebar-->
-    <aside class="sidebar">
+    <aside class="sidebar"  id="sidebar">
         <div class="sidebar_header"> <img class="img_h" src="img/sidebar-header.jpg" alt=""> </div>
         <div class="sidebar_content">
             <div class="profile"> <img class="profile_avatar" src="img/d3ddfdd406b6460aa4e3d2e92904b615.jpg" alt="">
@@ -60,12 +60,14 @@
                     </li>
                 </ul>
 <!-- mob-nav -->
-                <nav class="mob-nav">
-                    <li> <a href="index.html" class="nav_link">Главная</a></li>
-                    <li> <a href="text.html" class="nav_link">Обо мне</a></li>
-                    <li> <a href="#" class="nav_link">Реклама</a></li>
-                    <li> <a href="#" class="nav_link">Продвижение видео</a></li>
-                </nav>
+<nav class="mob-nav" >
+    <li> <a href="index.html" class="nav_link">Главная</a></li>
+    <li> <a href="text.html" class="nav_link">Обо мне</a></li>
+    <li> <a href="#" class="nav_link">Реклама</a></li>
+    <li> <a href="#" class="nav_link">Продвижение видео</a></li>
+</nav>
+
+
 
                 <div class="profile_text">Font-end разработчик c не большим опытом. Созданием сайтов занимаюсь с 2020 г. Основные навыки: HTML, CSS, JS. </div>
             </div>

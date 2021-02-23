@@ -16,6 +16,8 @@ modalBtn.forEach(item => {
     });
 
     modal.classList.add('show');
+
+    modalContent.style.transform = 'none';
   });
 });
 
@@ -31,11 +33,24 @@ modal.forEach(item => {
   item.addEventListener('click', event => {
     let currentModal = event.currentTarget;
 
+    setTimeout(function() {
     currentModal.classList.remove('show');
-
+}, 1);
   });
 });
 
 function closeModal(currentModal) {
   currentModal.classList.remove('show');
 }
+
+/*--------------------------------------*/
+
+const burger = document.getElementById('sidebarToggle');
+const sidebar = document.getElementById('sidebar');
+
+burger.addEventListener('click', event => {
+  document.body.classList.toggle('show-sidebar');
+
+});
+
+/*--------------------------------------*/
