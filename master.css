@@ -325,7 +325,8 @@ li {
 }
 
 .add-post__textarea {
-    overflow: hidden;
+    display: block;
+
     flex-grow: 1;
     border: none;
     background: transparent;
@@ -337,12 +338,12 @@ li {
 
 .add-post__form {
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .add-post-send {
     display: flex;
-    height: 1.1rem;
+    height: 34px;
     background: blue;
     border-radius: 50%;
     padding: 3px 5px;
