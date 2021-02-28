@@ -73,9 +73,7 @@ body {
     outline-offset: 0;
 }
 
-placholder {
-    color: #000;
-}
+
 
 .nav_list {
     display: flex;
