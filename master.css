@@ -30,9 +30,7 @@ body {
     z-index: 1000;
     box-shadow: 5px 0 15px black;
 }
-.show-sidebar{
-  transform: translateX(0%);
-}
+
 /*--------------------------------------*/
 
 .header {
@@ -839,6 +837,7 @@ p {
     padding: 4rem;
     background-color: #202020;
     border-radius: 5px;
+    top: -100px;
 }
 
 .modal_content-contact {

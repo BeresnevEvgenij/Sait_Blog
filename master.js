@@ -5,7 +5,7 @@ const modal = document.querySelectorAll('.modal');
 
 modalBtn.forEach(item => {
   item.addEventListener('click', event => {
-    console.log('clicked');
+    
     let $this = event.currentTarget;
     let modalid = $this.getAttribute('data-modal');
     let modal = document.getElementById(modalid);
